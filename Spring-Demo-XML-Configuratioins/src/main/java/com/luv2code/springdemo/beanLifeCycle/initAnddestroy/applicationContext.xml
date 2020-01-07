@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!-- init and destroy methods does not takes any input and does not returns any out put so generally void is used as return type init-method is called immideatly after instatiation of bean and destroy method is called before destroying of bean -->
+	
+ 	<bean id="init_destroy"
+ 		class="com.luv2code.springdemo.beanLifeCycle.initAnddestroy.InitDestroy"  init-method="init" destroy-method="destroy">	
+ 			
+ 	</bean>
+ 	
+ 	
+ 	
+
+
+
+</beans>
+
+
+
+
+

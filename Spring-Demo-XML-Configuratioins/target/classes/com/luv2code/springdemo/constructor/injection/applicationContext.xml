@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	
+    <!-- Define your beans here -->
+    <!-- scope single ton makes to create same object every time we call contex.getBean() method.  -->
+   <!-- Scope prototype makes to creates a differnt objects every time we call contex.getBean() method. -->
+    <bean id="fortune" class="com.luv2code.springdemo.constructor.injection.HappyFortuneService" scope="singleton"/>
+    
+ 	<!-- <bean id="myCoach"
+ 		class="com.luv2code.springdemo.TrackCoach">	 		
+ 	</bean> -->
+ 	<bean id="Track_Coach"
+ 		class="com.luv2code.springdemo.constructor.injection.TrackCoach" >	
+ 		<constructor-arg ref="fortune"/>	
+ 	</bean>
+ 	
+ 	
+ 	<bean id="Base_Ball_Coach"
+ 		class="com.luv2code.springdemo.constructor.injection.BaseballCoach"  >	
+ 		<constructor-arg ref="fortune"/>	
+ 		<constructor-arg ref="Track_Coach"/>
+ 		
+ 	</bean>
+ 	
+
+<!-- setting up constructor injection -->
+    <!--
+    <bean id="myCoach"
+        class="com.luv2code.springdemo.BaseballCoach">         
+    </bean>
+    -->
+
+</beans>
+
+
+
+
+

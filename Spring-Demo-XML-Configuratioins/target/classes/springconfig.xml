@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean id="emp" class="com.bharath.spring.springcore.Employee" p:id="20" p:name="bharath"/>
+    <bean id="hospital" class="com.bharath.spring.springcore.Hospital" >
+    
+    <property name="name" value="balakrishna"/>
+    <property name="patientDetails">
+    <!-- if there in only one element then we can remove list tag -->
+    <list>
+     <value>hospitalname:kamineni hospitals</value>
+    <value>condition:mental</value>
+    
+    </list>
+    
+    </property>
+    </bean>
+      
+   
+
+</beans>
