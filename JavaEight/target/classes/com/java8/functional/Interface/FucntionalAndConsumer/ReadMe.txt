@@ -1,6 +1,6 @@
 Fucntional Interface
 ----------------------
-   Only difference between Predicate and Functional interface is functional interface can return any type but predicate only return 
+   Only difference between Predicate and Functional interfaceS is functional interface can return any type but predicate only return 
    boolean. 
    Fucntional interface conatains apply() method. below is the method signature
    
@@ -44,7 +44,7 @@ Fucntional Interface
    		Consumer Chaining :
    			Consumer chaining contains default method called andThen(Consumer<T>)
    			
-   			If we have accept function like this  
+   			If we have accept functions like this  
    			
    			Consumer<String> consume=str->str.length();
    			Consumer<String> consume1=str->str.charAt();

@@ -1,7 +1,7 @@
 Every table has fields which are nothing but names of the columns. Every row is called record of the table
-
+-----------------
 Select Statement : (SELECT * from <table name>)                  ---> retrives  all the values in the table 
-----------------   (SELECT <column_1>,<colume_2>, FROM <Table_Name>  ---> selects values from the specific columns all  
+   (SELECT <column_1>,<colume_2>, FROM <Table_Name>  ---> selects values from the specific columns all  
 
 
 Distinct         :  syntax : (SELECT DISTINCT <column_1>,<colume_2> FROM <table name>)  Used to select distinct i.e unique values in a column
@@ -50,10 +50,15 @@ Where            :  syntax : SELECT <column_1>,<colume_2> from <table_name> wher
 	SQL NULL Values : It is not possible to test for NULL values with comparison operators, such as =, <, or <>. We will have to use the IS NULL and IS NOT NULL operators instead.
 
                       Syntax  : SELECT column_names FROM table_name WHERE column_name IS NULL;
-					            SELECT column_names FROM table_name WHERE column_name IS NULL;
+					            SELECT column_names FROM table_name WHERE column_name IS NOT NULL;
 							   
 							   
 					  Examples : SELECT CustomerName, ContactName, Address FROM Customers WHERE Address IS NULL;
                                  SELECT CustomerName, ContactName, Address FROM Customers WHERE Address IS NOT NULL;					  
 					  
+	UPDATE STATEMENT : UPDATE <TableName> <column_name1>=<value1>,<column_name2>=<value2>,<column_name3>=<value3> where condition;
+	
+	                   Example : UPDATE Customers SET ContactName = 'Alfred Schmidt', City= 'Frankfurt' WHERE CustomerID = 1;
+					   
+	DELETE STATEMENT : 
 	

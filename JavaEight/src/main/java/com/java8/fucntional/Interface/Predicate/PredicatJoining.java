@@ -14,8 +14,8 @@ public class PredicatJoining {
 		Predicate<Integer> checkGreater= I -> I>10;    //checks number is greater than 10 or not 
 		Predicate<Integer> checkPrime = I -> I%2==0;   //checks nuber is prime or not 
 		
-		System.out.println(checkGreater.test(16));
-		System.out.println(checkPrime.test(16));
+		/*System.out.println(checkGreater.test(16));
+		System.out.println(checkPrime.test(16));*/
 		
 		predicateAndJoining(checkGreater.and(checkPrime),arr);
 		predicateAndJoining(checkGreater.or(checkPrime),arr);
