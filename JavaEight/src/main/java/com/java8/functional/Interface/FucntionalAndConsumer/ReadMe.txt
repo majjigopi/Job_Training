@@ -33,7 +33,72 @@ Fucntional Interface
     						      will be selcected first and then they are converted to upper case                        
     
     
-    refer to class ExampleFucntionalInterface for exam
+    refer to class ExampleFucntionalInterface for example
+    
+	Primitive version of Functional interface's
+	-----------------------------------------
+	Why we are using primitive versions of functional interfaces for clarity refer com.java8.functional.interface.predicate
+	 IntFucntion :  Which takes int input and returns Integer(we have to mention return type where input type is predefined) output
+	 	 
+	 	  primitive interface name : IntFunction
+	 	 
+	 	 IntFunction<Integer>  func= x-> x*x ;//<integer> is the return type that we are mentioning 
+		 func.apply(10);
+		   
+		   similarly we have DobleFucntion, LongFunction,
+		 
+		 In the above program we mentioned input and output is predefined. Now we have some primitive types for that has predefined 
+		 output
+		 
+		primitive interface name : ToIntFunction
+		 
+		 ToIntFunction<String> f=s -> s.length();
+		 sysout(f.applyAsInt("Durga"))
+		  
+		  similarly we have ToLongFunction, ToDoubleFunction
+		 
+		 ToIntFunction is functional interface which is a primitive version to Function interface it can take any input and gives 
+		 only int return type because the return type of its abstract method applyAsInt is int type
+		 
+		 
+     Lets's look at another type of  Primitive type for Functional interface
+     -----------------------------------------------------------------------
+     
+     	IntToDouble : primitve interface name : IntToDoubleFunction 
+     	------------ 		  
+	    here we no need to mention both input type and return type 
+	     
+	      Example : IntToDoubleFucntion f=i->Math.sqrt(i);
+	                 sysout(f.applyAsDouble(5))
+	
+	  similarly we have IntToLongFunction,
+	                    LongTointFunction
+	                    LongToDobleFunction,
+	                    DoubleToLongFucntion 
+	                    DobleToIntFunction
+	                    ToIntBiFunction
+	                    ToLongBiFunction
+	                    ToDoubleFunction
+	  
+	 BiFunction : Which takes two inputs and return one output 
+	 -----------                     
+	                 public BiFunction<T,U,R>
+	                 {
+	                 
+	                 public R apply(T t,U u);   //where two and t,u are inputs and R is the rerurn type 
+	                 
+	                 }
+	                 
+	                 
+	                 
+	                 Example :
+	                   
+	                   BiFunction<Integer,Integer,Float> bifun=(a,b)-> Math.sqrt(a+b+c);
+	                   
+	                     bifun.apply(30,22);
+	               
+	                 
+	   
     
     Consumer Fucnctional Interface :
     -------------------------------
@@ -54,6 +119,16 @@ Fucntional Interface
    					consume.andThen(consume1).accept("hello brother"); 
    					
    					refer to example ConsumerFunctionChaining
+   					
+   					
+   					
+   	BiConsumer :
+   	------------
+   	            accepts two inputs and gives nothing 
+   	            
+   	            example:  BiConsumer<String,String> biConsumer = (s1,s2)-> sysout(s1+s2);
+   	                      sysout("hello","Vasavi");
+   	         				
    			
    			
     	

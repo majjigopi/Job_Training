@@ -9,10 +9,11 @@ public class ConsumerFunctionChaining {
 		Consumer<String> consume1=str-> System.out.println(str.length());
 		Consumer<String> consume2=str-> System.out.println(str.charAt(6));
 		
-		consume1.accept("hello vasavi");
+	//	consume1.accept("hello vasavi");
 		 //using accept functional interface
 		//fucntion chaining 
-		consume1.andThen(consume2).accept("hello vasavi");
+		Consumer consume3=consume1.andThen(consume2);
+				consume3.accept("hello vasavi");
 		
 	}
 
