@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="21-hibernate-with-service-demo/src/test/java/|Spring-Rest/src/main/java/|kafka-beginners/src/main/java/|Spring-Demo-XML-Configuratioins/src/main/java/|JavaEight/src/main/java/|21-hibernate-with-service-demo/src/main/java/|mycoolapp/src/test/java/|JavaDemo/src/|Spring-Jdbc/src/main/java/|Spring-Demo-Annotations/src/main/java/|Spring-Hiberante/src/main/java/|spring-rest-exception-handling-demo/src/main/java/|mycoolapp/src/main/java/" kind="src" path=""/>
+	<classpathentry kind="src" path="21-hibernate-with-service-demo/src/main/java"/>
+	<classpathentry kind="src" path="21-hibernate-with-service-demo/src/test/java"/>
+	<classpathentry kind="src" path="JavaDemo/src"/>
+	<classpathentry kind="src" path="JavaEight/src/main/java"/>
+	<classpathentry kind="src" path="kafka-beginners/src/main/java"/>
+	<classpathentry kind="src" path="mycoolapp/src/main/java"/>
+	<classpathentry kind="src" path="mycoolapp/src/test/java"/>
+	<classpathentry kind="src" path="Spring-Demo-Annotations/src/main/java"/>
+	<classpathentry kind="src" path="Spring-Demo-XML-Configuratioins/src/main/java"/>
+	<classpathentry kind="src" path="Spring-Hiberante/src/main/java"/>
+	<classpathentry kind="src" path="Spring-Jdbc/src/main/java"/>
+	<classpathentry kind="src" path="spring-rest-exception-handling-demo/src/main/java"/>
+	<classpathentry kind="src" path="Spring-Rest/src/main/java"/>
+	<classpathentry kind="output" path="JavaDemo/bin"/>
+</classpath>

@@ -1,0 +1,28 @@
+Method And Constructor Reference (::) :
+  
+  Method Reference :
+        This method referer (::) is used to refer one method in to another method like suppose we have 
+         int i=6;
+         int j;
+         j=i;
+          
+          here we are refering int variable i into j 
+          
+          simlarly if we have two methods we can refer one method into another method see the MethodReferenceinterf and test example 
+          
+          conditions:
+          ----------
+             To impliment method reference. two referer and refering method should have same arguments 
+             
+             
+           example :
+           ---------
+               look in to Interf(interface) and Test(class) 
+               
+               
+   Constructor Reference : 
+   		
+   			Constructoe can be easily reference by using       AbstractInterface f=ClassName::new ; the return type of abstract interface method should be ClassName type;
+   			 
+   			 
+   			 see examples classes Test and ConstructorReferenceInterf	             

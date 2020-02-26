@@ -1,0 +1,9 @@
+Optional is used to avoid null pointer exception.
+Optional is used to avoid boliler plate code.
+Optional can make objects to not accept null values
+
+it is preseent in java.util package.
+it can hold default values if the object is empty 
+
+see OptionalExample for example 
+

@@ -1,0 +1,8 @@
+concepts of java 8
+------------------
+	lamda expressions
+	functional interfaces(java.util.function) which contains consumer, predicate, Function and supllier interface
+	Default mehtods inside interfaces
+	static methods inside interfaces
+	method reference and constructor reference using double column (::)
+	
