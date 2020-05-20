@@ -8,10 +8,12 @@ public class CreateStudentDemo {
 
 	public static void main(String[] args) {
 	//create a sessinfactory which contains  cofiguration files
-		SessionFactory factory = new Configuration()
-				.configure("hibernate.cfg.xml")
-				.addAnnotatedClass(Student.class)
-				.buildSessionFactory();
+		
+				
+		Configuration cf=	new Configuration();
+		cf.configure("hibernate.cfg.xml");
+		cf.addAnnotatedClass(Student.class);
+		SessionFactory factory = 	cf.buildSessionFactory();
 		
 		//create a session for saving a student object
 		Session session=factory.getCurrentSession();

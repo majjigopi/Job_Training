@@ -14,8 +14,8 @@
     <property name="patientDetails">
     <!-- if there in only one element then we can remove list tag -->
     <list>
-     <value>hospitalname:kamineni hospitals</value>
-    <value>condition:mental</value>
+     <value>kamineni hospitals</value>
+    <value>mental</value>
     
     </list>
     

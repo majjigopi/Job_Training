@@ -1,0 +1,32 @@
+we can clone repository in the git using command
+	
+	--- git clone java "url_to_be_cloned"
+	
+	
+after cloning. to  know the changes made to cloned repository we have to use command like 
+    
+    --- git status 
+    
+ This command shows us any untracked files or modified files that are not commited
+ 
+ git add <file Names> this command makes us to add file that are to be tracked by the git.
+ 
+ Then using git commit -m <message>  to commit all the changes that are maded to the repository 
+ example :
+       git clone <repository_url> // clones existing repository in the git
+       
+       create a new file call ReadMe.md  write some content in it 
+       
+       the enter the command      git status  this command show us ReadMe.md as untracked files
+       
+       the enter the command     git add Readme.md makes the file ready to be shipped to git repository when ever we 
+       
+       use commit  command 
+       
+       then enter the command git commit -m "message" this command commits all the changes and the files are now ready to shipped 
+       
+       Now git push origin master makes the file to pushed to the git repository
+       
+       now makes some changes to the readme.md file and now type "git status" then this command shows changes
+       
+       if we type git readme.md . this command shows us the differences that are made in the file    

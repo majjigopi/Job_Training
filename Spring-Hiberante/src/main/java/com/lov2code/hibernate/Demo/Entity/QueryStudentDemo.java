@@ -18,13 +18,14 @@ public class QueryStudentDemo {
 				// create session
 				Session session = factory.getCurrentSession();
 				session.beginTransaction();
-				List<Student> theStudent=session.createQuery("from Student").list();
+				List<Student> theStudent=session.createQuery("from Student").getResultList();
 				for(Student student:theStudent)
 				{
 					System.out.println(student);
 				}
-				
-				session.close();
+			 theStudent=session.createQuery("from Student where lastName='Doe'").getResultList();
+			System.out.println(theStudent);	
+			 session.close();
 
 	}
 

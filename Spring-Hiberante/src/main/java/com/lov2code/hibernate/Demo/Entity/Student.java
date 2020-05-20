@@ -18,7 +18,6 @@ public class Student {
 	}
 
 	@Id
-	
 	@Column(name="id")
 	
 	@GeneratedValue(strategy=GenerationType.IDENTITY)//There are different generationTypes please check some tutorial for clarity

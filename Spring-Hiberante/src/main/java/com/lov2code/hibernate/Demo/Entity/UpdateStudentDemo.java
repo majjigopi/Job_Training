@@ -30,21 +30,11 @@ public class UpdateStudentDemo {
 	                
 	                session.beginTransaction();
 	                
-	                session.createQuery("update student set email=foo@gmail.com").executeUpdate();//another way of updating data base
+	                session.createQuery("update Student set email='foo@gmail.com' where id= 3").executeUpdate();//another way of updating data base
 	                
 	                session.getTransaction().commit();
 	                
-                    session=factory.getCurrentSession();
-	                
-	                session.beginTransaction();
-	                
-	                student=session.get(Student.class, 3);
-	                
-	                session.delete(student);//one way to delete entire row 
-	                
-	                session.createQuery("delete firstname from student where id=3").executeUpdate();//another way of deleting from data base data base
-	                
-	                
+                   
 	                session.close();
 
 }
